@@ -90,6 +90,7 @@ export const SectionCard = styled.div`
   justify-content: space-between;
   max-width: 460px;
   background: #28262e;
+  color: #f4f4f4;
   padding: 30px;
   margin: 10px 0;
   border-radius: 10px;
@@ -122,7 +123,8 @@ export const AddUser = styled.div`
 
   a {
     text-decoration: none;
-    color: #f2f2f2;
+    color: #252525;
     margin: 20px 10px;
+    font-weight: bold;
   }
 `;

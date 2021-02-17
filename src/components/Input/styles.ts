@@ -49,7 +49,7 @@ export const Container = styled.div<ContainerProps>`
     border: 0;
     color: #F2F2F2;
     &::placeholder {
-      color: #666360;
+      color: #f2f2f2;
     }
   }
 

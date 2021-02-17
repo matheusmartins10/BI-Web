@@ -13,6 +13,10 @@ import Dashboard from '../pages/Dashboard';
 import SignInAdmin from '../pages/SignInAdmin';
 import DashboardAdmin from '../pages/DashboardAdmin';
 import SignupAdmin from '../pages/SignUpAdmin';
+import Logistica from '../pages/Logistica';
+import CustoLogistica from '../pages/CustoLogistica';
+import Dre from '../pages/Dre';
+import Geolocalizacao from '../pages/Geolocalizacao';
 
 const Routes: React.FC = () => (
   <Switch>
@@ -21,6 +25,10 @@ const Routes: React.FC = () => (
     <Router path="/forgot-password" component={ForgotPassword} />
     <Router path="/reset-password" component={ResetPassword} />
     <Router path="/dashboard" component={Dashboard} isPrivate />
+    <Router path="/bi/logistica" component={Logistica} isPrivate />
+    <Router path="/bi/custo-logistica" component={CustoLogistica} isPrivate />
+    <Router path="/bi/dre" component={Dre} isPrivate />
+    <Router path="/bi/geolocalizacao" component={Geolocalizacao} isPrivate />
 
     <RouteAdmin path="/signin/admin" component={SignInAdmin} />
     <RouteAdmin path="/admin" component={DashboardAdmin} isPrivate />

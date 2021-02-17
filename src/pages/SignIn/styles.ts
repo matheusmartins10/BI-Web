@@ -1,10 +1,15 @@
 import styled, { keyframes } from 'styled-components';
 import { shade } from 'polished';
 
+import backgroundImage from '../../assets/logo.png';
+
 export const Container = styled.div`
+  max-width: 1160px;
+  margin: 0px auto;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 `;
 
 export const Content = styled.div`
@@ -50,20 +55,20 @@ export const AnimationContainer = styled.div`
     }
 
     a {
-      color: #f4ede8;
+      color: #312e38;
       display: block;
       margin-top: 24px;
       text-decoration: none;
       transition: color 0.2s;
 
       &:hover {
-        color: ${shade(0.2, '#f4ede8')};
+        color: ${shade(0.2, '#312e38')};
       }
     }
   }
 
   > a {
-    color: #f4f4f4;
+    color: #312e38;
     display: block;
     margin-top: -30px;
     text-decoration: none;
@@ -72,11 +77,17 @@ export const AnimationContainer = styled.div`
     transition: color 0.2s;
 
     &:hover {
-      color: ${shade(0.2, '#f4f4f4')};
+      color: ${shade(0.2, '#312e38')};
     }
 
     svg {
       margin-right: 16px;
     }
   }
+`;
+
+export const Background = styled.div`
+  flex: 1;
+  background: url(${backgroundImage}) no-repeat center;
+  width: 500px;
 `;

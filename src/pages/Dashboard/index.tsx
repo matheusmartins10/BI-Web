@@ -27,7 +27,7 @@ const Dashboard: React.FC = () => {
           <Profile>
             <div>
               <span>Bem vindo,</span>
-              <Link to="/profile">
+              <Link to="/">
                 <strong>{user.name}</strong>
               </Link>
             </div>
@@ -41,49 +41,46 @@ const Dashboard: React.FC = () => {
       <Content>
         <SectionCard>
           <div>
-            <h2> Sky </h2>
+            <h2> Logística </h2>
           </div>
           <div>
-            <a
-              href="http://sistemas.casablancaonline.cloudns.pro/crossmedia/sky/2018a/site/login.php"
-              target="_blank"
-            >
+            <Link to="/bi/logistica">
               {' '}
               acessar <FiArrowRight />{' '}
-            </a>
+            </Link>
           </div>
         </SectionCard>
         <SectionCard>
           <div>
-            <h2> Totvs </h2>
+            <h2> Custo de Logística </h2>
           </div>
           <div>
-            <a href="https://totvs.casablancaonline.com.br/" target="_blank">
+            <Link to="/bi/custo-logistica">
               {' '}
               acessar <FiArrowRight />{' '}
-            </a>
+            </Link>
           </div>
         </SectionCard>
         <SectionCard>
           <div>
-            <h2> CheckSum </h2>
+            <h2> DRE </h2>
           </div>
           <div>
-            <a href="/">
+            <Link to="/bi/dre">
               {' '}
               acessar <FiArrowRight />{' '}
-            </a>
+            </Link>
           </div>
         </SectionCard>
         <SectionCard>
           <div>
-            <h2> Office </h2>
+            <h2> Geolocalização </h2>
           </div>
           <div>
-            <a href="https://www.office.com/" target="_blank">
+            <Link to="/bi/geolocalizacao">
               {' '}
               acessar <FiArrowRight />{' '}
-            </a>
+            </Link>
           </div>
         </SectionCard>
       </Content>
